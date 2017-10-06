@@ -17,8 +17,6 @@
   "support": {
     "issues": "https://github.com/ratedam/log-custom-favourites/issues"
   },
-  "require": {
-    "php": ">=7.0"
-  },
+  "require": {},
   "require-dev": {}
 }
