@@ -19,5 +19,7 @@
     "issues": "https://github.com/ratedam/log-custom-favourites/issues"
   },
   "require": {},
-  "require-dev": {}
+  "require-dev": {},
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
