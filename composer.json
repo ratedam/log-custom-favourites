@@ -1,0 +1,24 @@
+{
+  "name": "ratedam/log-custom-favourites",
+  "type": "wordpress-plugin",
+  "license": "GPL",
+  "description": "SLog favourites plugin.",
+  "homepage": "https://github.com/ratedam/log-custom-favourites",
+  "authors": [
+    {
+      "name": "Ângelo Marques",
+      "email": "angmarques94@gmail.com",
+      "homepage": "https://pt.linkedin.com/in/%C3%A2ngelo-marques-a30364110"
+    }
+  ],
+  "keywords": [
+    "wordpress"
+  ],
+  "support": {
+    "issues": "https://github.com/ratedam/log-custom-favourites/issues"
+  },
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {}
+}
