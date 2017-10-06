@@ -2,7 +2,7 @@
   "name": "ratedam/log-custom-favourites",
   "type": "wordpress-plugin",
   "license": "GPL",
-  "description": "SLog favourites plugin.",
+  "description": "Log favourites plugin.",
   "homepage": "https://github.com/ratedam/log-custom-favourites",
   "authors": [
     {
