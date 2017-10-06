@@ -4,6 +4,7 @@
   "license": "GPL",
   "description": "Log favourites plugin.",
   "homepage": "https://github.com/ratedam/log-custom-favourites",
+  "version" : "1.0.0",
   "authors": [
     {
       "name": "Ângelo Marques",
