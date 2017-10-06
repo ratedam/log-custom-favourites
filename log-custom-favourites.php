@@ -2,7 +2,7 @@
 /*
 Plugin Name:  Log Favourites
 Plugin URI:   https://nourl.ocom
-Description:  Log favourites plugin for showcase.
+Description:  Log favourites plugin.
 Version:      20171006
 Author:       Ângelo Marques
 Author URI:   https://pt.linkedin.com/in/%C3%A2ngelo-marques-a30364110
