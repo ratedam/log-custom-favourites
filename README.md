@@ -1,6 +1,6 @@
 # Log Custom Favourites
 This plugin creates a custom field to the 'posts' post type named "Favourites" available through the frontend and the REST API with the GET and UPDATE methods. 
-With this you can manage all your favourite posts. You also can call your favourite posts by using the shortcode [log_favourites].
+With this you can manage all your favourite posts. You also can call your favourite posts by using the shortcode [log_favourites] or by using the embbed widget.
 
 ### Installing
 1. Download the plugin into your plugins directory
