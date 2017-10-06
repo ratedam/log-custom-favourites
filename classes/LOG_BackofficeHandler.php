@@ -2,7 +2,7 @@
 /**
  * General handler class that'll control the class instantiating and general hooks for widgts
  */
-namespace log_custom_favourites;
+namespace classes;
 
 class LOG_BackofficeHandler{
 
@@ -16,7 +16,7 @@ class LOG_BackofficeHandler{
 
 	function log_favourites_init(){
 	    // Register the metaboxes
-		    new Log_FieldRegister();
+		    new LOG_FieldRegister();
 
 		// Integrate with the api
 		    new LOG_ApiIntegration();
@@ -27,7 +27,7 @@ class LOG_BackofficeHandler{
 	}
 
     function log_favourites_register_widget() {
-	    register_widget( 'log_custom_favourites\LOG_WidgetFavourites' );
+	    register_widget( 'classes\LOG_WidgetFavourites' );
     }
 
 }

@@ -3,7 +3,7 @@
  * Class created to be used by shortcode and widget output generation
  */
 
-namespace log_custom_favourites;
+namespace classes;
 
 
 class LOG_DatabaseHandler

@@ -2,7 +2,7 @@
 /**
  * Handle the shortcode logic and output
  */
-namespace log_custom_favourites;
+namespace classes;
 
 class LOG_ShortcodeHandler{
 

@@ -4,7 +4,7 @@
  * Create a custom widget that'll show the favourite posts
  * Uses the wp_widget call for the widgets api
  */
-namespace log_custom_favourites;
+namespace classes;
 
 
 class LOG_WidgetFavourites extends \WP_Widget {

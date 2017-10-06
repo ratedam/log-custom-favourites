@@ -23,16 +23,19 @@ License URI:  https://www.gnu.org/licenses/gpl-2.0.html
     }
 
     define('LOG_FAVOURITES_VER' , 1.0 );
-	
-	require 'classes/LOG_BackofficeHandler.php';
-	require 'classes/LOG_FieldRegister.php';
-	require 'classes/LOG_ApiIntegration.php';
-	require 'classes/LOG_ShortcodeHandler.php';
-	require 'classes/LOG_WidgetFavourites.php';
-	require 'classes/LOG_DatabaseHandler.php';
 
+
+    // Add the autoloader
+    spl_autoload_register( 'log_custom_favourite_autoloader' );
+    function log_custom_favourite_autoloader( $class_name ) {
+        if ( false !== strpos( $class_name, 'LOG' ) ) {
+            $classes_dir = realpath( LOG_FAVOURITES_BASEPATH ) . DIRECTORY_SEPARATOR ;
+            $class_file = $class_name . '.php';
+            require_once $classes_dir . $class_file;
+        }
+    }
 	
-	$log_backoffice_handler = new log_custom_favourites\LOG_BackofficeHandler();
+	$log_backoffice_handler = new classes\LOG_BackofficeHandler();
 
 
 

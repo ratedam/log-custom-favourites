@@ -3,7 +3,7 @@
  * Register the field in the required post type (post for this example) and it's displaying/saving methods.
  */
 
-namespace log_custom_favourites;
+namespace classes;
 
 class LOG_FieldRegister{
 

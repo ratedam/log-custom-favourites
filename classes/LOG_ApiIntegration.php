@@ -2,7 +2,7 @@
 /**
  * Class to create the integration mechanics with the rest api (GET AND UPDATE) as required.
  */
-namespace log_custom_favourites;
+namespace classes;
 
 class LOG_ApiIntegration{
     function __construct(){
