@@ -10,12 +10,14 @@ License:      GPL2
 License URI:  https://www.gnu.org/licenses/gpl-2.0.html
 */
 
+USE classes\LOG_BackofficeHandler;
+
 	if( ! defined('LOG_FAVOURITES_BASEPATH') ){
 		define('LOG_FAVOURITES_BASEPATH' , plugin_dir_path( __FILE__ ) );
 	}
 	
 	if( ! defined('LOG_FAVOURITES_PARTIALS' ) ){
-		define('LOG_FAVOURITES_PARTIALS' , LOG_FAVOURITES_BASEPATH . "partials/" );
+		define('LOG_FAVOURITES_PARTIALS' , LOG_FAVOURITES_BASEPATH . "partials" . DIRECTORY_SEPARATOR );
 	}
 
 	if( ! defined( 'LOG_FAVOURITES_METAKEY' ) ){
@@ -27,17 +29,14 @@ License URI:  https://www.gnu.org/licenses/gpl-2.0.html
 
     // Add the autoloader
     spl_autoload_register( 'log_custom_favourite_autoloader' );
-    function log_custom_favourite_autoloader( $class_name ) {
-        if ( false !== strpos( $class_name, 'LOG' ) ) {
-            $classes_dir = realpath( LOG_FAVOURITES_BASEPATH ) . DIRECTORY_SEPARATOR ;
-            $class_file = $class_name . '.php';
-            require_once $classes_dir . $class_file;
+    function log_custom_favourite_autoloader( $class ) {
+        $class = str_replace("\\", DIRECTORY_SEPARATOR, $class);
+        if ( file_exists(LOG_FAVOURITES_BASEPATH . $class . '.php') ) {
+            include LOG_FAVOURITES_BASEPATH . $class . '.php';
         }
+
     }
-	
-	$log_backoffice_handler = new classes\LOG_BackofficeHandler();
 
-
-
+    $log_backoffice_handler = new LOG_BackofficeHandler();
 
 ?>
